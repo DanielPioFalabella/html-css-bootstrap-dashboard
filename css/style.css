@@ -5,3 +5,26 @@
 nav {
     font-size: 12px;
 }
+
+main {
+    font-size: 10px;
+}
+
+.ms-btn {
+    padding: 0px 3px;
+    font-size: 10px;
+}
+
+.ms-btn-action {
+    padding: 5px 6px;
+    font-size: 10px;
+}
+
+.ms-btn-add {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.ms-text-gray {
+    color: gray;
+}
