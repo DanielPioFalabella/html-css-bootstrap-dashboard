@@ -24,9 +24,14 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img class="ms-logo-header" src="./imgs/duck.png" alt="logo pagina">
-                </a>
+
+                <nav class="navbar">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="./imgs/duck.png" alt="Bootstrap" width="45" height="45">
+                        </a>
+                    </div>
+                </nav>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +65,7 @@
     <main>
         <div class="container mx-5">
             <div class="row">
-                <div class="col-9">
+                <div class="col-lg-9 col-md-12">
                     <div class="d-flex justify-content-between align-items-center">
                         <p class="fs-5">Catalgo libri</p><br>
                         <button type="button" class="btn btn-primary ms-btn-add">Aggiungi Libro</button>
@@ -69,7 +74,7 @@
                         <thead>
                             <tr>
                                 <th scope="col">Titolo</th>
-                                <th scope="col">Data prestito</th>
+                                <th class="d-none d-sm-table-cell" scope="col">Data prestito</th>
                                 <th scope="col">Stato</th>
                                 <th scope="col">Azioni</th>
                             </tr>
@@ -77,117 +82,142 @@
                         <tbody>
                             <tr>
                                 <th class="fw-normal" scope="row">I pilastri della terra</th>
-                                <td>-</td>
+                                <td class="d-none d-sm-table-cell">-</td>
                                 <td><button type="button" class="btn btn-success ms-btn">Disponibile</button></td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-pen"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-trash"></i></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-trash"></i></i></button>
                                 </td>
                             </tr>
                             <tr>
                                 <th class="fw-normal" scope="row">I promessi sposi</th>
-                                <td>-</td>
+                                <td class="d-none d-sm-table-cell">-</td>
                                 <td><button type="button" class="btn btn-success ms-btn">Disponibile</button></td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-pen"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-trash"></i></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-trash"></i></i></button>
                                 </td>
                             </tr>
                             <tr>
                                 <th class="fw-normal" scope="row">Il Signore degli Anelli</th>
-                                <td>18/10/2023</td>
+                                <td class="d-none d-sm-table-cell">18/10/2023</td>
                                 <td><button type="button" class="btn btn-warning ms-btn">In prestito</button></td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-pen"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-trash"></i></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-trash"></i></i></button>
                                 </td>
                             </tr>
                             <tr>
                                 <th class="fw-normal" scope="row">Harry Potter e la pietra filosofale</th>
-                                <td>-</td>
+                                <td class="d-none d-sm-table-cell">-</td>
                                 <td><button type="button" class="btn btn-success ms-btn">Disponibile</button></td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-pen"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-trash"></i></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-trash"></i></i></button>
                                 </td>
                             </tr>
                             <tr>
                                 <th class="fw-normal" scope="row">Il codice Da Vinci</th>
-                                <td>-</td>
+                                <td class="d-none d-sm-table-cell">-</td>
                                 <td><button type="button" class="btn btn-danger ms-btn">Non disponibile</button></td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-pen"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-trash"></i></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-trash"></i></i></button>
                                 </td>
                             </tr>
                             <tr>
                                 <th class="fw-normal" scope="row">Shining</th>
-                                <td>-</td>
+                                <td class="d-none d-sm-table-cell">-</td>
                                 <td><button type="button" class="btn btn-success ms-btn">Disponibile</button></td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-pen"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-trash"></i></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-trash"></i></i></button>
                                 </td>
                             </tr>
                             <tr>
                                 <th class="fw-normal" scope="row">La divina commedia</th>
-                                <td>21/09/2023</td>
+                                <td class="d-none d-sm-table-cell">21/09/2023</td>
                                 <td><button type="button" class="btn btn-warning ms-btn">In prestito</button></td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-pen"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-trash"></i></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-trash"></i></i></button>
                                 </td>
                             </tr>
                             <tr>
                                 <th class="fw-normal" scope="row">Il trono di spade</th>
-                                <td>-</td>
+                                <td class="d-none d-sm-table-cell">-</td>
                                 <td><button type="button" class="btn btn-success ms-btn">Disponibile</button></td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-pen"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-trash"></i></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-trash"></i></i></button>
                                 </td>
                             </tr>
                             <tr>
                                 <th class="fw-normal" scope="row">Il mondo di Sofia</th>
-                                <td>-</td>
+                                <td class="d-none d-sm-table-cell">-</td>
                                 <td><button type="button" class="btn btn-danger ms-btn">Non disponibile</button></td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-pen"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-trash"></i></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-trash"></i></i></button>
                                 </td>
                             </tr>
                             <tr>
-                                <th class="fw-normal" scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</th>
-                                <td>25/07/2023</td>
+                                <th class="fw-normal" scope="row">Le cronache di Narnia: il leone, la strega e l'armadio
+                                </th>
+                                <td class="d-none d-sm-table-cell">25/07/2023</td>
                                 <td><button type="button" class="btn btn-warning ms-btn">In prestito</button></td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-pen"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-trash"></i></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-trash"></i></i></button>
                                 </td>
                             </tr>
                             <tr>
                                 <th class="fw-normal" scope="row">Il piccolo principe</th>
-                                <td>-</td>
+                                <td class="d-none d-sm-table-cell">-</td>
                                 <td><button type="button" class="btn btn-success ms-btn">Disponibile</button></td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-pen"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-trash"></i></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-trash"></i></i></button>
                                 </td>
                             </tr>
                             <tr>
                                 <th class="fw-normal" scope="row">La storia infinita</th>
-                                <td>-</td>
+                                <td class="d-none d-sm-table-cell">-</td>
                                 <td><button type="button" class="btn btn-success ms-btn">Disponibile</button></td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-pen"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i class="fa-solid fa-trash"></i></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary ms-btn-action"><i
+                                            class="fa-solid fa-trash"></i></i></button>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="col-3">
+                <div class="col-lg-3 col-md-12">
                     <div class="container">
                         <div class="row align-items-start">
                             <div class="col-12">
@@ -223,62 +253,57 @@
                             </div>
 
                             <div class="col-12">
-                                <table class="table table-bordered">
-                                    <tr>
-                                        <th class="fs-5 fw-normal">F.A.Q.</th>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            <div class="accordion" id="accordionExample">
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header">
-                                                        <button class="accordion-button" type="button"
-                                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                                            aria-expanded="true" aria-controls="collapseOne">
-                                                            Come aggiungere un nuovo libro?
-                                                        </button>
-                                                    </h2>
-                                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                                        data-bs-parent="#accordionExample">
-                                                        <div class="accordion-body">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header">
-                                                        <button class="accordion-button collapsed" type="button"
-                                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                            aria-expanded="false" aria-controls="collapseTwo">
-                                                            Come posso accedere all'anagrafica utenti?
-                                                        </button>
-                                                    </h2>
-                                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                                        data-bs-parent="#accordionExample">
-                                                        <div class="accordion-body"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header">
-                                                        <button class="accordion-button collapsed" type="button"
-                                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                            aria-expanded="false" aria-controls="collapseThree">
-                                                            Posso usare questa dashboard da mobile?
-                                                        </button>
-                                                    </h2>
-                                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                                        data-bs-parent="#accordionExample">
-                                                        <div class="accordion-body"></div>
-                                                    </div>
-                                                </div>
+                                <ul class="fs-5 fw-normal list-unstyled">
+                                    <li>F.A.Q.</li>
+                                    <li class="list-group-item"></li>
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    Come aggiungere un nuovo libro?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body"></div>
                                             </div>
-                                        </th>
-                                    </tr>
-                                </table>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Come posso accedere all'anagrafica utenti?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body"></div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    Posso usare questa dashboard da mobile?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 </body>
